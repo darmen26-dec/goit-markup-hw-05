@@ -256,6 +256,25 @@ span {
   gap: 30px;
   padding-left: 0;
 }
+.img-list {
+  position: relative;
+}
+.img-description {
+  position: absolute;
+  bottom: -12px; /* chciałam 0 ale nie było wtedy tego cienia od dołu i nie wiem czy w taki sposób ok */
+  width: 100%;
+  height: 70px;
+  background: rgba(47, 48, 58, 0.8);
+  color: var(--color-text-secondary);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  font-size: 1.4rem;
+  line-height: 1.1;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
 /* ===== ICONS ==== */
 .svg-what-we-do {
   width: 270px;
@@ -502,4 +521,28 @@ footer {
   box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06),
     0px 1px 1px rgba(0, 0, 0, 0.12);
   cursor: pointer;
+}
+.box-to-overlay {
+  position: relative;
+  overflow: hidden;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(33, 150, 243, 0.9);
+  transform: translateY(100%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.overlay p {
+  font-size: 1.8rem;
+  line-height: 1.6;
+  letter-spacing: 0.03em;
+  color: var(--color-text-secondary);
+  margin: 49px 45px 49px 24px;
+}
+.card-portfolio:hover .overlay {
+  transform: translateY(0);
 }
