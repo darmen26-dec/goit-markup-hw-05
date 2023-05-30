@@ -83,6 +83,20 @@ span {
   gap: 46px;
   padding-left: 0;
 }
+.nav-active {
+  position: relative;
+  display: flex;
+  color: var(--selected-text);
+}
+.nav-active::after {
+  content: "";
+  position: absolute;
+  background: var(--selected-text);
+  width: 100%;
+  height: 4px;
+  top: 44px;
+  border-radius: 2px;
+}
 .mail {
   font-weight: 500;
   font-size: 1.4rem;
