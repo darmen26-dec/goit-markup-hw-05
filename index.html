@@ -58,7 +58,9 @@
       <!--HERO-->
       <div class="hero">
         <h1>EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU</h1>
-        <button type="button" class="button-hero">Zamów usługę</button>
+        <button type="button" class="button-hero" data-modal-open>
+          Zamów usługę
+        </button>
       </div>
       <!--WHAT WE DO-->
       <section class="section">
@@ -489,14 +491,15 @@
         </div>
       </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" class="close-btn" data-modal-close>
+          <svg width="11px" height="11px">
+            <use href="./images/icons.svg#icon-vector-x"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
     <script src="./js/modal.js"></script>
   </body>
 </html>
-
-<!--
-  <button data-modal-open>OPEN</button>
-
-<div class="modal is-hidden" data-modal>
-  <button data-modal-close>X</button>
-</div>
--->
