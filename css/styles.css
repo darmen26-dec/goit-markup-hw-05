@@ -47,7 +47,7 @@ h2 {
   line-height: 1.2;
   letter-spacing: 0.03em;
   text-align: center;
-  margin-bottom: 50px;
+  margin-block: 0 50px;
 }
 h3 {
   font-weight: 500;
@@ -225,13 +225,19 @@ span {
   pointer-events: none;
 }
 /* ================================= WHAT WE DO SECTION =================================*/
-.heading-describtion {
+.description-main {
+  display: flex;
+  justify-content: space-between;
+  text-align: left;
+  padding-bottom: 94px;
+}
+.description-heading {
   font-weight: 700;
   font-size: 1.4rem;
   line-height: 1.1;
   letter-spacing: 0.03em;
 }
-.text-describtion {
+.description-text {
   font-size: 1.4rem;
   line-height: 1.7;
   letter-spacing: 0.03em;
@@ -240,16 +246,7 @@ span {
   margin-top: 10px;
   gap: 30px;
 }
-.description-main {
-  display: flex;
-  justify-content: space-between;
-  text-align: left;
-  padding-bottom: 94px;
-}
-.what-we-do-h2 {
-  margin-top: 0;
-}
-.what-we-do-flex {
+.what-we-do-images {
   display: flex;
   justify-content: space-between;
   gap: 30px;
