@@ -199,8 +199,7 @@ span {
   height: 100%;
   z-index: 2;
   background-color: rgba(0, 0, 0, 0.2);
-  transition-duration: var(--default-time);
-  transition-timing-function: var(--default-timing-function);
+  transition: opacity 400ms;
 }
 .modal {
   position: absolute;
@@ -226,9 +225,10 @@ span {
   cursor: pointer;
 }
 .is-hidden {
-  visibility: hidden;
   opacity: 0;
   pointer-events: none;
+  transition: opacity 300ms;
+  /* visibility: hidden; */
 }
 /* ================================= WHAT WE DO SECTION =================================*/
 .description-main {
