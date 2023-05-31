@@ -12,7 +12,7 @@ body {
   font-family: "Roboto", sans-serif;
   background: var(--background);
   color: var(--color-text);
-  max-width: 1600px;
+  width: 1600px;
   padding: 0;
   margin: 0;
 }
@@ -157,7 +157,6 @@ span {
 }
 /* ================================== HERO ==================================*/
 .hero {
-  max-width: 1600px;
   height: 600px;
   background-color: #2f303a;
   padding: 200px 452px 280px 452px;
