@@ -157,7 +157,7 @@ span {
 }
 /* ================================== HERO ==================================*/
 .hero {
-  max-width: 1600px; /* CZY max??? */
+  max-width: 1600px;
   height: 600px;
   background-color: #2f303a;
   padding: 200px 452px 280px 452px;
@@ -287,7 +287,6 @@ span {
 }
 /* ================================= TEAM SECTION =================================*/
 .team-background {
-  max-width: 1600px;
   background-color: #f5f4fa;
 }
 .job-position {
@@ -371,7 +370,6 @@ span {
 }
 /* ================================= FOOTER =================================*/
 footer {
-  max-width: 1600px;
   background-color: #2f303a;
   padding: 60px 0;
 }
